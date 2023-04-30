@@ -1,74 +1,32 @@
-ul {
-    margin: 0 auto;
-    height: auto;
-  }
-  /* DEPARTURE */
-  .departure-f {
-    margin-top: -7px;
-    text-align: center;
-    background-image: url("../../../img/destinationBg.png");
-    background-repeat: no-repeat;
-    background-size: 103% 100%;
-    background-position: center;
-    margin: 0 auto;
-    padding: 0 30px;
-    width: 395px;
-  
-   
-    
-  }
-  .departure-f,.question-head-f {
-    padding-bottom: 0;
-  }
-  .departure-f,.departure-list-f p {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 70px;
-    color: white;
-    transition: 0.1s ease-in;
-    display: inline-block;
-  }
-  .destination-selection {
-    width: 450px;
-    margin: 0 auto;
-  }
-  .question-head-f {
-    font-size: 20px;
-    color: rgba(255, 255, 255, 0.897);
-    padding: 30px 0;
-  }
-  
-  /* DESTINATION */
-  .destination-category {
-    text-align: left;
-    font-size: 20px;
-    color: #141414;
-    margin-top: 30px;
-    margin-left: 1em;
-  }
-  .destination-category-list {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    height: auto;
-    width: 100%;
-    white-space: nowrap;
-  }
-  .destination-category-list-item {
-    /* background-image: url("../../../img/"); */
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    font-size: 40px;
-    width: 182px;
-    height: 125px;
-    list-style-type: none;
-    color: rgb(255, 255, 255);
-    transition: 0.1s ease-in;
-    display: inline-block;
-    margin-right: 10px;
-    padding-right: 10px;
-    
-  }
+.search-container {
+  border: solid;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: azure;
+  flex-direction: column;
+  margin: auto;
+}
+.search-container .form-group {
+  width: 150px;
+}
+.search-container input {
+  width: 100%;
+  padding: 5px;
+}
+.search-container button {
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+  padding: 10px;
+  background-color: green;
+  color: whitesmoke;
+}
 
-  .destination-category-list-item,li {
-    padding-top: 62px;
-  }
+.search-container button:hover {
+  background-color: burlywood;
+  color: black;
+  cursor: pointer;
+}

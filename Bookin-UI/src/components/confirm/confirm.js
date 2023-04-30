@@ -1,9 +1,11 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { SelectSeat } from '../Reservation/SelectSeat/SelelctSeat';
 import './confirm.css'
 
 
 
-export function Confirm() {
+export function Confirm(props) {
+    console.log(props);
     let navigate = useNavigate();
     function handleCnf() {
         navigate('/ticket')

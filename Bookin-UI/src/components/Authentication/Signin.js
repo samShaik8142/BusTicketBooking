@@ -46,7 +46,7 @@ function handleSignin() {
     axios.post("http://localhost:8000/signin", { email: state.email, password: state.password })
         .then(result => {
             if (result.data.status) {     
-                navigate("/seat")
+                navigate("/destination")
             } else {
                 alert(result.data.message);
                 navigate('/signup');

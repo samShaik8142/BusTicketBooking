@@ -48,8 +48,8 @@ export const Ticket = props => {
               <p className="ticket-section-body">John Doe</p>
             </div>
             <div className="passenger-barcode-section-second bar-code">
-              {/* <img src={require("../../resources/images/barCodeImg.png")} />
-              src={require("#")} */}
+               <img src={require("../../img/barCodeImg.png")} />
+              
             </div>
           </div>
         </div>

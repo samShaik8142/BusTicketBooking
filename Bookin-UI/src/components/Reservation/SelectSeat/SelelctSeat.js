@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Confirm } from "../../confirm/confirm";
 import { Link, useNavigate } from 'react-router-dom';
 import './SelectSeat.css'
 
@@ -33,8 +34,9 @@ export const SelectSeat = props => {
     seatNo10 : true,
     seatNo1 : true
   })
+  const [data, setdata] = useState(null);
   const [count, setCount]=useState({
-    count: 0
+    count:0
   })
 
 
@@ -50,14 +52,16 @@ export const SelectSeat = props => {
    isClicked[id]=true;
     }
   }
+  let total=0;
   function handleSubmit() {
     console.log("submiting");
-    let total=0;
+    
     for(let i=0;i<11;i++){
       if(isClicked["seatNo"+i]=== false){
         total++;
       }
     }
+    setdata(total);
     count.count=total;
     console.log(count);
     navigate('/confirm');
@@ -107,8 +111,6 @@ export const SelectSeat = props => {
       <div className="proceed-button-container">
       <button className="proceed-button" onClick={handleSubmit}>Get Ticket</button>
       </div>
-      
-
     </div>
   );
 };
