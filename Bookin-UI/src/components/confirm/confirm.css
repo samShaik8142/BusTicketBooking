@@ -1,0 +1,42 @@
+.body{
+    background: url(../../img/bgcnf.png);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 2px;
+  padding-bottom: 22%;
+    
+}
+.container{
+    width: 20%;
+     padding:40px;
+     text-align: center;
+     margin-top: 90px;
+     margin-left:480px;
+     background-color: #d4d842;
+     border-radius: 5%;
+}
+h1 {
+    font-size: 25px;
+    font-weight: 6000;
+    margin-bottom: 30px;
+}
+h3{
+    display: block;
+    margin: 0 5px;
+    padding: 3px 13px;
+    border-radius: 15px;
+    color: #75123e;
+}
+
+.cnf-btn {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-cnf{
+    margin: 10px auto -10px 120px;
+}
